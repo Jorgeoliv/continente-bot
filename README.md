@@ -1,5 +1,7 @@
 # continente-bot
 
+This repo has a script to check if there are tickets available for the Portuguese league matches in Continente.
+
 ## Build & run
 
 Create a `.env` file first. Example:
