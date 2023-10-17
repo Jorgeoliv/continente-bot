@@ -1,0 +1,13 @@
+{
+  "name": "continente-bot",
+  "packageManager": "yarn@3.4.1",
+  "type": "module",
+  "scripts": {
+    "test": "node testePup.js",
+    "debug": "node --inspect-brk testePup.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.63.0",
+    "puppeteer": "^21.3.8"
+  }
+}
