@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "NODE_ENV=development node testePup.js",
+    "test:prod": "node testePup.js",
     "debug": "node --inspect-brk testePup.js"
   },
   "dependencies": {
