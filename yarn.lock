@@ -385,6 +385,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "continente-bot@workspace:."
   dependencies:
+    dotenv: ^16.3.1
     node-telegram-bot-api: ^0.63.0
     puppeteer: ^21.3.8
   languageName: unknown
@@ -511,6 +512,13 @@ __metadata:
   version: 0.0.1179426
   resolution: "devtools-protocol@npm:0.0.1179426"
   checksum: 38a091bde42d7d0f8e5e6c7a445db6a56d7b80f21f51de47ed1316123f70b2256aa6fe0d87fbe37bcc4928c0b9245e28a17fb7fbf8d8622156ae36870b26c1ed
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
   languageName: node
   linkType: hard
 

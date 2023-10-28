@@ -3,10 +3,11 @@
   "packageManager": "yarn@3.4.1",
   "type": "module",
   "scripts": {
-    "test": "node testePup.js",
+    "test": "NODE_ENV=development node testePup.js",
     "debug": "node --inspect-brk testePup.js"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "node-telegram-bot-api": "^0.63.0",
     "puppeteer": "^21.3.8"
   }
