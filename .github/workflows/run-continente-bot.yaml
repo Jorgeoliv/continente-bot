@@ -1,0 +1,32 @@
+name: Test
+
+on:
+  push:
+    branches:
+    - main
+    - features/**
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  # build:
+  #   env:
+  #       MATCH_WEEK: '11'
+  #       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  #       TELEGRAM_BOT_CHAT_ID: ${{ secrets.TELEGRAM_BOT_CHAT_ID }}
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo MATCH_WEEK=11 >> .env
+          echo TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }} >> .env
+          echo TELEGRAM_BOT_CHAT_ID=${{ secrets.TELEGRAM_BOT_CHAT_ID }} >> .env
+          cat .env
+      - name: Build the stack
+        run: docker-compose run continente-bot
+      - name: Stop containers
+        run: docker-compose down 

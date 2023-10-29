@@ -1,5 +1,10 @@
 import puppeteer from 'puppeteer';
 import TelegramBot from 'node-telegram-bot-api';
+import dotenv from 'dotenv';
+
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
 
 const MATCH_WEEK = process.env.MATCH_WEEK;
 

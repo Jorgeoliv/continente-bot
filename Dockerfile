@@ -21,4 +21,6 @@ RUN yarn
 
 COPY testePup.js .
 
-CMD ["yarn", "test"]
+RUN yarn test:prod
+
+CMD ["echo", "done"]
